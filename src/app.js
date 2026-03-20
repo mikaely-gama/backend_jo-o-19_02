@@ -7,15 +7,9 @@ app.get("/", (request, response) => {
     response.send("VOU TRANCAR O CURSO!!!!")
 })
 
-// app.use(express.json())
+ app.use(express.json())
 
-app.post("/users", (req, res) => {
-    console.log(req)
-    
-
-    res.send("Estamos testando")
-})
-
+app.post("/users", userController.createUser)
 app.get("/users", userController.getAllUsers)
 
 module.exports = app
