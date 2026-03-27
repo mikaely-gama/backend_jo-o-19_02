@@ -10,7 +10,7 @@ collection:
   - url: localhost:3000
     name: Testa a API
     meta:
-      id: req_168922ba3e244deaabe170ef1ad911c5
+      id: req_f726f29521d94ff8b8ae6fe22458c671
       created: 1773959363244
       modified: 1773959444430
       isPrivate: false
@@ -33,7 +33,7 @@ collection:
   - url: localhost:3000/users
     name: "lista usuários "
     meta:
-      id: req_a18fc12c1f614fee978d45fac82079cf
+      id: req_fea5b01403ad46fb8f9bac8116e72e4a
       created: 1773960279832
       modified: 1773960351764
       isPrivate: false
@@ -56,9 +56,9 @@ collection:
   - url: localhost:3000/users
     name: "cadastra usuários "
     meta:
-      id: req_d73553ed8e394bfdb0dcea70ee513f0f
+      id: req_8e4cc7b02c3d4d789fae61c6ada1d33e
       created: 1773960363068
-      modified: 1773966695017
+      modified: 1774564092937
       isPrivate: false
       description: ""
       sortKey: -1773960363068
@@ -67,7 +67,7 @@ collection:
       mimeType: application/json
       text: |-
         {
-         "name": "Vitor",
+         "name": "mikaely",
         	"age"  : "18"
         }
     headers:
@@ -85,16 +85,39 @@ collection:
         send: true
         store: true
       rebuildPath: true
+  - url: localhost:3000/users/1774572378913
+    name: busca usuário por id
+    meta:
+      id: req_c1bed8218b9548a28855d68c23123dbb
+      created: 1774570487521
+      modified: 1774572395462
+      isPrivate: false
+      description: ""
+      sortKey: -1774570487521
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
     id: jar_99d30891da4bdcebc63947a8fc17f076de878684
-    created: 1773959202963
-    modified: 1773959202963
+    created: 1774562450329
+    modified: 1774562450329
 environments:
   name: Base Environment
   meta:
     id: env_99d30891da4bdcebc63947a8fc17f076de878684
-    created: 1773959202961
-    modified: 1773959202961
+    created: 1774562450324
+    modified: 1774562450324
     isPrivate: false

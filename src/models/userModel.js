@@ -9,7 +9,21 @@ const create = (newUser) => {
     return newUser
 }
 
+const findById = (id) => {
+//     //for ( let i = 0; i < users.length; i++ ){
+//        if (users[i].id == id) {
+//           return acheiUsuario = users[i]
+//        }
+//     }
+
+//     return null
+
+    return users.find( user => user.id == id )
+
+ }
+
 module.exports = {
    findAll,
-   create
+   create,
+   findById
 }
