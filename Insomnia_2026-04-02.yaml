@@ -10,7 +10,7 @@ collection:
   - url: localhost:3000
     name: Testa a API
     meta:
-      id: req_f726f29521d94ff8b8ae6fe22458c671
+      id: req_0f73cda30c3842d5a6335e8b5ca27b94
       created: 1773959363244
       modified: 1773959444430
       isPrivate: false
@@ -33,7 +33,7 @@ collection:
   - url: localhost:3000/users
     name: "lista usuários "
     meta:
-      id: req_fea5b01403ad46fb8f9bac8116e72e4a
+      id: req_51cfadb38b2d4945b5dd5c94e16edde1
       created: 1773960279832
       modified: 1773960351764
       isPrivate: false
@@ -56,7 +56,7 @@ collection:
   - url: localhost:3000/users
     name: "cadastra usuários "
     meta:
-      id: req_8e4cc7b02c3d4d789fae61c6ada1d33e
+      id: req_b8fbb15b7d5d4abfad264cf62a5f20c1
       created: 1773960363068
       modified: 1774564092937
       isPrivate: false
@@ -85,12 +85,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: localhost:3000/users/1774572378913
+  - url: localhost:3000/users/1775170273440
     name: busca usuário por id
     meta:
-      id: req_c1bed8218b9548a28855d68c23123dbb
+      id: req_8298fa2301064f1bb842d01fea931dab
       created: 1774570487521
-      modified: 1774572395462
+      modified: 1775172491817
       isPrivate: false
       description: ""
       sortKey: -1774570487521
@@ -108,16 +108,71 @@ collection:
         send: true
         store: true
       rebuildPath: true
+  - url: localhost:3000/users/12
+    name: atualiza usuário
+    meta:
+      id: req_30956f4c9f844683b70347bdf7925dd1
+      created: 1775172345550
+      modified: 1775176322646
+      isPrivate: false
+      description: ""
+      sortKey: -1775172345550
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+         "name": "mikaely",
+        	"age"  : "18"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000/users/1
+    name: removo usuário
+    meta:
+      id: req_ae7e065f2275464c8493e424a100e571
+      created: 1775177642442
+      modified: 1775177686079
+      isPrivate: false
+      description: ""
+      sortKey: -1774265425294.5
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
     id: jar_99d30891da4bdcebc63947a8fc17f076de878684
-    created: 1774562450329
-    modified: 1774562450329
+    created: 1775169325507
+    modified: 1775169325507
 environments:
   name: Base Environment
   meta:
     id: env_99d30891da4bdcebc63947a8fc17f076de878684
-    created: 1774562450324
-    modified: 1774562450324
+    created: 1775169325504
+    modified: 1775169325504
     isPrivate: false
